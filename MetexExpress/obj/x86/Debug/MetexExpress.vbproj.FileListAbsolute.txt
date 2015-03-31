@@ -7,3 +7,13 @@ C:\Users\Johannes\Documents\Visual Studio 2010\Projects\MetexExpress\MetexExpres
 C:\Users\Johannes\Documents\Visual Studio 2010\Projects\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.exe
 C:\Users\Johannes\Documents\Visual Studio 2010\Projects\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.xml
 C:\Users\Johannes\Documents\Visual Studio 2010\Projects\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.pdb
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.xml
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\bin\Debug\MetexExpress.exe
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\bin\Debug\MetexExpress.pdb
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\bin\Debug\MetexExpress.xml
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.vbprojResolveAssemblyReference.cache
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.Form1.resources
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.Resources.resources
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.vbproj.GenerateResource.Cache
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.exe
+C:\Users\Johannes\Desktop\GitHub\MetexExpress\MetexExpress\obj\x86\Debug\MetexExpress.pdb

@@ -9,11 +9,11 @@ Public Class Form1
 
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles MyBase.FormClosing
 
-        SerialPort1.Close()
+		SerialPort1.Close()
 
-    End Sub
+	End Sub
 
-    Private Sub btnExport_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnExport.Click
+	Private Sub btnExport_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnExport.Click
 
         'declare new SaveFileDialog + set it's initial properties
         Dim sfd As New SaveFileDialog With {
@@ -61,15 +61,12 @@ Public Class Form1
 
             'Messintervall
             If rbSMessInvervall.Checked Then
-                messIntervall = Convert.ToInt32(txtMessIntervall.Text) * 1000 'Sekunden
+				messIntervall = Convert.ToInt32(txtMessIntervall.Text) * 1000 'Sekunden
             ElseIf rbMMessIntervall.Checked Then
-                messIntervall = Convert.ToInt32(txtMessIntervall.Text) * 1000 * 60 'Minuten
+				messIntervall = Convert.ToInt32(txtMessIntervall.Text) * 1000 * 60 'Minuten
             ElseIf rbHMessIntervall.Checked Then
-                messIntervall = Convert.ToInt32(txtMessIntervall.Text) * 1000 * 60 * 60 'Stunden
+				messIntervall = Convert.ToInt32(txtMessIntervall.Text) * 1000 * 60 * 60 'Stunden
             End If
-
-
-
 
             'Timer1.Interval = messIntervall
 
@@ -82,21 +79,21 @@ Public Class Form1
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles toggleAnAus.CheckedChanged
-        If toggleAnAus.CheckState = CheckState.Checked Then
-            SerialPort1.Open()
-            SerialPort1.Write("D")
-            Sleep(500)
-            toggleAnAus.Text = "Verbindung hergestellt"
-        ElseIf toggleAnAus.CheckState = CheckState.Unchecked Then
-            SerialPort1.Close()
-            toggleAnAus.Text = "Verbinden"
-        Else
-            MsgBox("Checkstate ist unbestimmt.")
-        End If
-    End Sub
+	Private Sub CheckBox1_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles toggleAnAus.CheckedChanged
+		If toggleAnAus.CheckState = CheckState.Checked Then
+			SerialPort1.Open()
+			SerialPort1.Write("D")
+			Sleep(500)
+			toggleAnAus.Text = "Verbindung hergestellt"
+		ElseIf toggleAnAus.CheckState = CheckState.Unchecked Then
+			SerialPort1.Close()
+			toggleAnAus.Text = "Verbinden"
+		Else
+			MsgBox("Checkstate ist unbestimmt.")
+		End If
+	End Sub
 
-    Private Sub txtMessIntervall_KeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs) Handles txtMessIntervall.KeyPress
+	Private Sub txtMessIntervall_KeyPress(ByVal sender As Object, ByVal e As KeyPressEventArgs) Handles txtMessIntervall.KeyPress
 
         If e.KeyChar = Convert.ToChar(Keys.Back) Then
             'Damit man Zahlen mit der Rücktaste wieder löschen kann
