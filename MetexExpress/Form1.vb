@@ -46,7 +46,7 @@ Public Class Form1
         If txtMessDauer.Text = "" Or txtMessIntervall.Text = "" Then
             MsgBox("Bitte Werte für Messdauer und Messintervall eingeben!")
         Else
-            Dim wert As String
+            'Dim wert As String
             Dim messIntervall As Integer
             Dim messDauer As Integer
 
@@ -121,5 +121,31 @@ Public Class Form1
 
     End Sub
 
+    Sub timedLoop(time As Integer)
+
+        Dim zeitZuEnde = False
+        Dim timeNow = Now.TimeOfDay
+
+        Do Until zeitZuEnde
+
+        Loop
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+        Dim jetzt As Date = Now
+        Dim seconds As Integer = 10
+        Dim i As Integer = 0
+        MsgBox(jetzt.ToString)
+        MsgBox(jetzt.AddSeconds(seconds).ToString)
+
+        Do Until (Now = jetzt.AddSeconds(seconds))
+            Sleep(1000)
+            i += 1
+        Loop
+
+        MsgBox(i)
+
+    End Sub
 End Class
 

@@ -46,6 +46,7 @@ Partial Class Form1
         Me.rbHMessdauer = New System.Windows.Forms.RadioButton()
         Me.rbMMessdauer = New System.Windows.Forms.RadioButton()
         Me.rbSMessDauer = New System.Windows.Forms.RadioButton()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -285,11 +286,21 @@ Partial Class Form1
         Me.rbSMessDauer.Text = "Sekunden"
         Me.rbSMessDauer.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(373, 140)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(736, 221)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtMessDauer)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.txtMessIntervall)
@@ -340,4 +351,5 @@ Partial Class Form1
     Friend WithEvents rbHMessdauer As RadioButton
     Friend WithEvents rbMMessdauer As RadioButton
     Friend WithEvents rbSMessDauer As RadioButton
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class
