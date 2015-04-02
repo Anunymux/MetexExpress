@@ -4,7 +4,7 @@ Imports System.Text.RegularExpressions
 
 
 Public Class Form1
-
+    'Github Verbindung eingebaut
     'Zeit noch einbauen
 
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles MyBase.FormClosing
